@@ -34,6 +34,12 @@ Ex.: {link}
 ## Implementação - Usando atributo
 
 ```csharp
+using System;
+using System.Linq;
+using System.Net.Http;
+using System.Web.Http.Filters;
+using System.Web.OData;
+
 namespace Boiko
 {
     public class EnablePageQueryAttribute : EnableQueryAttribute
@@ -101,6 +107,9 @@ namespace Boiko
 #### Usando o atributo
 
 ```csharp
+using System.Web.Http;
+using System.Web.OData;
+
 namespace Boiko
 {
     public class ExempleController : ODataController
@@ -116,6 +125,12 @@ namespace Boiko
 ## Implementação - Usando código
 
 ```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
+using System.Web.OData;
+using System.Web.OData.Extensions;
 using System.Web.OData.Query;
 
 namespace Boiko
